@@ -1,9 +1,12 @@
-import ft
-import imt
+import sys
+sys.path.append('../package')
+
 import gc
 import re
-# import time
+import ft
+import imt
 
+# import time
 from tqdm import tqdm
 
 # 主函数
@@ -23,6 +26,7 @@ if __name__ == '__main__':
     pixel = input("输入源图片的像素大小n,n（默认100*100)：")
     block = input("输入目标图标的预分块数20-300(默认100）：")
     acc = input("设置源图片单色阈值1-10（单色阈值越高输出图像的色彩还原度越好，默认2）：")
+
     if pixel == '':
         pixel = [20, 20]  # 源图片的尺寸【像素】
     else:
@@ -36,7 +40,7 @@ if __name__ == '__main__':
         acc = 0.2  # 设置准确度，0-1
     else:
         acc = list(map(int, (re.findall(r'(\d+)', acc))))
-        acc = acc[0]/10
+        acc = acc[0] / 10
     # hsvSpl = [6, 5, 8]
 
     # 获取图集素材的地址，图片类型：”jpg、png“；输出模式：文件路径；是否包含子文件：是

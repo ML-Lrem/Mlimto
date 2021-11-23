@@ -33,6 +33,6 @@ if __name__ == '__main__':
     for n, imgPath in enumerate(tqdm(galleyPaths)):
         img = imt.crop(path=imgPath, pl=pixel)      # 按比例裁剪图片
         img = imt.compress(img=img, mode='width', wid=pixel[0])    # 等宽度缩放图片
-        # 存储满足条件的小图片到指定路径
+        # 存储图片到指定路径
         targetPath = targetFold + '\\' + targetName + '_' + str(n) + '.jpg'
         imt.write(path=targetPath, img=img)

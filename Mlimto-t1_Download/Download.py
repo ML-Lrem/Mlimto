@@ -1,12 +1,13 @@
 # coding=utf-8
 # author: Lrem
-# conputer: 32926
+# computer: 32926
 # time: 2020/8/13 22:32
 # FileName: Tool_GUI
 
 # tool: PyCharm
 
 import os
+import re
 import requests
 import winsound
 from tkinter import *

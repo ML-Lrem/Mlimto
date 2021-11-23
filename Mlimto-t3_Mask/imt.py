@@ -118,23 +118,25 @@ def crop(path=None, img=None, mode='center', pl=None):
 # Description: 缩放图片
 # input：
 #   path：图片路径
-#   mode：缩放模式，prop，等比例缩放；width，等宽缩放
+#   mode：缩放模式，prop，等比例缩放；width，等宽缩放；
 #   wid：锁定宽度
 #   pro：缩放比例
 # Return：
 #   img：缩放后的图片矩阵
 #
 # process：done
-def compress(path=None, img=None, mode='width', wid=None, pro=None):
+def compress(path=None, img=None, mode='width', pl=None, pro=None):
     if path is None:
         pass
     else:
         img = read(path)
     h, w = img.shape[0:2]
     if mode == 'width':
-        img = cv.resize(img, (wid, int(h * wid / w)))
+        img = cv.resize(img, (pl[0], int(h * pl[0] / w)))
     elif mode == 'prop':
         img = cv.resize(img, (int(w * pro), int(h * pro)))
+    elif mode == 'force':
+        img = cv.resize(img, (pl[0], pl[1]))
     else:
         print('zip parameter error')
     return img
