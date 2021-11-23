@@ -8,11 +8,11 @@ A picture processing tools for windows wallpaper
 
 
 
-> 已开发功能：比例裁剪、色调调整、多图生成一图、网页图片/图集下载
+> 已开发功能：比例裁剪、色调调整、多图生成一图、网页图片/图集下载、图片遮罩
 
-> 正在进行的功能：图片遮罩
+> 正在进行的功能：无损压缩
 
-> 待开发的功能：无损压缩、超分辨、更易用兼容性更好的网页图片下载
+> 待开发的功能：超分辨、更易用兼容性更好的网页图片下载
 
 
 
@@ -45,4 +45,10 @@ A picture processing tools for windows wallpaper
 
 
 ### T3 图片遮罩
+
+Mask
+
+输出结果
+
+![spring_1](https://i.loli.net/2021/11/23/jlCcyf2Ovqb67dY.jpg)
 
