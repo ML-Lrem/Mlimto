@@ -12,6 +12,7 @@
 #   pixel：保存图片的像素（图片质量）
 
 import ft
+import re
 import imt
 from tqdm import tqdm
 
@@ -23,8 +24,11 @@ if __name__ == '__main__':
     pixel = input("输入图片像素大小（默认2K分辨率)：")
     if pixel == '':
         pixel = [3840, 2160]
+    else:
+        pixel = list(map(int, (re.findall(r'(\d+)', pixel))))
     if targetFold == '':
         targetFold = galleyFold + '\\' + 'target'  # 默认目标文件位置    pixel = input("输入源图片的像素大小（默认2K分辨率)：")
+        ft.createFold(targetFold)
     else:
         ft.createFold(targetFold)
     galleyPaths = ft.getList(foldPath=galleyFold, fileType=['jpg', 'png', 'jpeg'])

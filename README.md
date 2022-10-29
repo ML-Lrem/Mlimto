@@ -22,13 +22,13 @@ A picture processing tools for windows wallpaper
 
 ### 总目标
 
-一个完整的面向所有电脑用户的**轻量化、易交互、高集成**的可视化桌面程序，优先适配Windows
+一个面向所有电脑用户的**轻量化、易交互、高集成**的可视化**桌面壁纸**处理程序，优先适配Windows
 
 
 
 ### T1 网页图片/图集下载
 
- WedDown
+ WebDown
 
 <img src="https://i.loli.net/2021/11/22/Ouv2zbQtMSpnw1c.png" alt="image-20211122202828748"  />
 
